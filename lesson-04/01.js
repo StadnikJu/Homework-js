@@ -23,6 +23,5 @@ function includesElement(array, element) {
             return true;
         }
     }
-
     return false;
 }
