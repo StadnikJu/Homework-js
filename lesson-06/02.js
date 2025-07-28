@@ -26,7 +26,6 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 
 
 
-let arr3 = [ 3, 34, 2, 5, 6, 7];
 
 const map = (array, callback) => {
 
@@ -41,14 +40,3 @@ const map = (array, callback) => {
   return newArr;
 
 }
-
-
-function maper(element, index) {
-  if(index % 2 === 0) {
-    return element * 2;
-  } else {
-    return element + 2;
-  }
-}
-
-console.log(map(arr3, maper));
