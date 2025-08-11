@@ -31,15 +31,8 @@ prev.addEventListener("click", function(){
   if(current < 0) {
     current = 2;
   }
+
   img.src = WEB_TECH_IMAGES[current];
-});
+})
 
 
-
-next.addEventListener("click", function(){
-  current++
-  if(current > 2) {
-    current = 0;
-  }
-  img.src = WEB_TECH_IMAGES[current];
-});
