@@ -11,8 +11,9 @@ function capitalizeWords(str) {
   const newStr = str.split(" ");
 
   for(let i = 0; i < newStr.length; i++) {
-      newStr[i] = newStr[i][0].toUpperCase() + newStr[i].slice[1, -1];
+      newStr[i] = newStr[i][0].toUpperCase() + newStr[i].slice(1);
   }
 
   return newStr.join(" ");
 }
+
