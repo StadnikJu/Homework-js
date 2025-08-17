@@ -14,6 +14,7 @@
   🧙 Подсказка: если пользователь кликнет по кнопке с питомцев, id питомца можно будет получить из объекта события (event.target.id)
 */
 
+
 const PETS = [
   { id: 'cat', title: '🐱' },
   { id: 'dog', title: '🐶' },
@@ -41,6 +42,15 @@ for (let i = 0; i < PETS.length; i++) {
   const pet = PETS[i]
 
   const petButtonElement = document.createElement('button')
+  petButtonElement.addEventListener("click", () => {
+    if(cart.length < 3) {
+      cart.push(pet.id);
+      updateCartDisplay();
+    } else {
+      messageBox.textContent = 'Вы не можете добавить более 3 питомцев';
+    }
+  })
+
   petButtonElement.classList.add('pet')
   petButtonElement.id = pet.id
   petButtonElement.textContent = pet.title
@@ -68,3 +78,4 @@ clearCartButton.addEventListener('click', function () {
 })
 
 // Твой код:
+
