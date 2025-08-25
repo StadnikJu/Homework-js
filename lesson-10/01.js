@@ -110,6 +110,7 @@ const controller = {
   // your code
   removeMovies(id) {
     model.removeMovies(id);
+    view.displayMessage("Фильм успешно удалён!");
   },
 }
 
